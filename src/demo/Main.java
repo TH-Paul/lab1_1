@@ -6,15 +6,6 @@ import java.util.List;
 
 public class Main {
 
-    public static void round(int n){
-        if ((n + 1)% 5 == 0){
-            n += 1;
-        }
-
-        if ((n + 2)% 5 == 0){
-            n += 2;
-        }
-    }
 
     public static int[] nicht_ausreichend(int[] noten){
         //avem nevoie de o lista de Integer pentru a putea adauga elementele cautate
