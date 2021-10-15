@@ -6,7 +6,11 @@ import java.util.List;
 
 public class Main {
 
-
+    /**
+     * alege notele sub 38
+     * @param noten - array de int cu toate notele
+     * @return array de int cu notele sub 38
+     */
     public static int[] nicht_ausreichend(int[] noten){
         //avem nevoie de o lista de Integer pentru a putea adauga elementele cautate
         List<Integer> filtered = new ArrayList<Integer>();
@@ -23,6 +27,11 @@ public class Main {
 
     }
 
+    /**
+     * calculeaza media notelor
+     * @param noten - array de int cu toate notele
+     * @return media notelor
+     */
     public static double durschnittswert(int[] noten){
         double summe = 0;
 
@@ -34,6 +43,11 @@ public class Main {
         return summe/noten.length;
     }
 
+    /**
+     * rotunjeste notele
+     * @param noten - array de int cu toate notele
+     * @return array de int cu notele rotunjite
+     */
     public static int[] gerundete_noten(int[] noten){
 
         //cream un nou array care va contine notele rotunjite
@@ -58,6 +72,11 @@ public class Main {
         return gerundet;
     }
 
+    /**
+     * calculeaza nota maxima rotunjita
+     * @param noten - array de int cu toate notele
+     * @return int - nota maxima rotunjita
+     */
     public static int maximale_note(int[] noten){
 
         //lucram cu notele rotunjite
@@ -75,7 +94,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] noten = new int[]{45, 25, 89, 88, 95, 74, 35, 38};
+        int[] noten = new int[]{45, 25, 89, 88, 94, 74, 35, 38};
 
         System.out.println("\nNicht ausreichende Noten:");
         int[] under_38 = nicht_ausreichend(noten);
